@@ -1,0 +1,16 @@
+using System;
+
+public class HelloWorld {
+    public static void Main(string[] args) {
+        Console.WriteLine ("Try clicking the Run button.");
+
+    int a=900;
+    int b=750;
+    int c=890;
+
+    int sum = a+b+c;
+    Double avg= sum/3;
+        Console.WriteLine("the average of these numbers are "+avg);
+        
+    }
+}
