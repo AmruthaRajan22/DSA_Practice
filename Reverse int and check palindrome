@@ -1,0 +1,19 @@
+using System;
+
+   int n=185581;
+   int original =n;
+
+   int reverse=0;
+
+        while(n>0)
+        {
+            int rem=n % 10;
+            reverse=reverse *10 +rem;
+            n=n/10;
+        }
+        
+    if(original==reverse)
+        Console.WriteLine("Its a Palindrome");
+
+    else
+        Console.WriteLine("Its Reverse "+ reverse);
