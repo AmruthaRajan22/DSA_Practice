@@ -1,0 +1,7 @@
+int a=12;
+        int b=7;
+
+        if(a>b)
+            Console.WriteLine("a is greater than b");
+        else
+            Console.WriteLine("B is greater than a");
