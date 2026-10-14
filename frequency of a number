@@ -1,0 +1,21 @@
+int[] arr = { 1, 2, 2, 3, 1 };
+
+Dictionary<int, int> frequency = new Dictionary<int, int>();
+
+foreach (int num in arr)
+{
+    if (frequency.ContainsKey(num))
+    {
+        frequency[num]++;
+    }
+    else
+    {
+        frequency[num] = 1;
+    }
+}
+
+foreach (var item in frequency)
+{
+    Console.WriteLine($"{item.Key}: {item.Value}");
+}
+teach me each line
