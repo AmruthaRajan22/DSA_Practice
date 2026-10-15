@@ -1,0 +1,26 @@
+int[] arr = { 10, 5, 20, 8, 15 };
+
+int largest = int.MinValue;
+int secondLargest = int.MinValue;
+
+foreach (int num in arr)
+{
+    if (num > largest)
+    {
+        secondLargest = largest;
+        largest = num;
+    }
+    else if (num > secondLargest && num != largest)
+    {
+        secondLargest = num;
+    }
+}
+
+if (secondLargest == int.MinValue)
+{
+    Console.WriteLine("No second-largest number");
+}
+else
+{
+    Console.WriteLine("Second Largest = " + secondLargest);
+}
