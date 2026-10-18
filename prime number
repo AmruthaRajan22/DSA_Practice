@@ -1,0 +1,20 @@
+using System;
+
+public class HelloWorld {
+    public static void Main(string[] args) {
+
+        int num = 7;
+bool isPrime = num >= 2;
+        for (int i = 2; i * i <= num; i++)
+{
+    if (num % i == 0)
+    {
+        isPrime = false;
+        break;
+    }
+}
+
+  Console.WriteLine(isPrime ? "Prime" : "Not Prime");
+}
+}
+        
