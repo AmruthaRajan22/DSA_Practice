@@ -1,0 +1,10 @@
+string str = "aabbcde";
+
+foreach (char ch in str)
+{
+    if (str.IndexOf(ch) == str.LastIndexOf(ch))
+    {
+        Console.WriteLine(ch);
+        break;
+    }
+}
