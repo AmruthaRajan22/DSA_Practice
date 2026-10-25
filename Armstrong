@@ -1,0 +1,43 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Enter a number:");
+        int num = Convert.ToInt32(Console.ReadLine());
+
+        int original = num;
+        int temp = num;
+        int digits = 0;
+        int sum = 0;
+
+        // Count the digits
+        do
+        {
+            digits++;
+            temp = temp / 10;
+        }
+        while (temp != 0);
+
+        temp = num;
+
+        // Calculate the sum of digits raised to the power
+        while (temp != 0)
+        {
+            int digit = temp % 10;
+            sum += (int)Math.Pow(digit, digits);
+            temp = temp / 10;
+        }
+
+        // Check the result
+        if (sum == original)
+        {
+            Console.WriteLine("Armstrong number");
+        }
+        else
+        {
+            Console.WriteLine("Not an Armstrong number");
+        }
+    }
+}
