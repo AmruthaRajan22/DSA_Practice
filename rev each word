@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter a sentence: ");
+        string sentence = Console.ReadLine();
+
+        string[] words = sentence.Split(' ');
+
+        for (int i = 0; i < words.Length; i++)
+        {
+            for (int j = words[i].Length - 1; j >= 0; j--)
+            {
+                Console.Write(words[i][j]);
+            }
+
+            Console.Write(" ");
+        }
+    }
+}
