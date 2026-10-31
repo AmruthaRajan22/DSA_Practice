@@ -1,0 +1,29 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter number: ");
+        int num = int.Parse(Console.ReadLine());
+
+        int oddSum = 0, evenSum = 0;
+        int position = 1;
+
+        while (num > 0)
+        {
+            int digit = num % 10;
+
+            if (position % 2 == 0)
+                evenSum += digit;
+            else
+                oddSum += digit;
+
+            position++;
+            num /= 10;
+        }
+
+        Console.WriteLine("Odd position sum: " + oddSum);
+        Console.WriteLine("Even position sum: " + evenSum);
+    }
+}
