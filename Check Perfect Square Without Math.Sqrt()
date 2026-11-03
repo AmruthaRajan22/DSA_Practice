@@ -1,0 +1,30 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Enter a number:");
+        int num = Convert.ToInt32(Console.ReadLine());
+
+        bool isPerfectSquare = false;
+
+        for (int i = 0; i * i <= num; i++)
+        {
+            if (i * i == num)
+            {
+                isPerfectSquare = true;
+                break;
+            }
+        }
+
+        if (isPerfectSquare)
+        {
+            Console.WriteLine("Perfect Square");
+        }
+        else
+        {
+            Console.WriteLine("Not a Perfect Square");
+        }
+    }
+}
