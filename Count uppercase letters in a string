@@ -1,0 +1,12 @@
+string s = "HeLLo WoRLD";
+int count = 0;
+
+foreach (char c in s)
+{
+    if (c >= 'A' && c <= 'Z')
+    {
+        count++;
+    }
+}
+
+Console.WriteLine(count);
