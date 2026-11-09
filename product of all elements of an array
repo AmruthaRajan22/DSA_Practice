@@ -1,0 +1,9 @@
+int[] arr = { 2, 3, 4 };
+int product = 1;
+
+foreach (int n in arr)
+{
+    product *= n;
+}
+
+Console.WriteLine(product);
