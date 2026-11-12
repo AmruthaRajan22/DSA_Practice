@@ -1,0 +1,15 @@
+string s = "I love programming in CSharp";
+
+string[] words = s.Split(' ');
+
+string longest = "";
+
+foreach (string word in words)
+{
+    if (word.Length > longest.Length)
+    {
+        longest = word;
+    }
+}
+
+Console.WriteLine(longest);
