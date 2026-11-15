@@ -1,0 +1,23 @@
+int[] a = { 1, 2, 2, 3, 4 };
+int[] b = { 2, 3, 3, 5 };
+
+for (int i = 0; i < a.Length; i++)
+{
+    bool found = false;
+    bool alreadyPrinted = false;
+
+    for (int j = 0; j < b.Length; j++)
+    {
+        if (a[i] == b[j])
+            found = true;
+    }
+
+    for (int k = 0; k < i; k++)
+    {
+        if (a[i] == a[k])
+            alreadyPrinted = true;
+    }
+
+    if (found && !alreadyPrinted)
+        Console.WriteLine(a[i]);
+}
