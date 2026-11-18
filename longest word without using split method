@@ -1,0 +1,23 @@
+string s = "I love learning programming";
+
+string word = "";
+string longest = "";
+
+foreach (char c in s + " ")
+{
+    if (c != ' ')
+    {
+        word += c;
+    }
+    else
+    {
+        if (word.Length > longest.Length)
+        {
+            longest = word;
+        }
+
+        word = "";
+    }
+}
+
+Console.WriteLine(longest);
