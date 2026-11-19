@@ -1,0 +1,19 @@
+string s = "aaabbcccc";
+string result = "";
+
+int count = 1;
+
+for (int i = 1; i <= s.Length; i++)
+{
+    if (i < s.Length && s[i] == s[i - 1])
+    {
+        count++;
+    }
+    else
+    {
+        result += s[i - 1] + count.ToString();
+        count = 1;
+    }
+}
+
+Console.WriteLine(result);
