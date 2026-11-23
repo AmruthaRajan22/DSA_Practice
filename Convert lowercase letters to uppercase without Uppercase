@@ -1,0 +1,12 @@
+string s = "hello world";
+string result = "";
+
+foreach (char c in s)
+{
+    if (c >= 'a' && c <= 'z')
+        result += (char)(c - 32);
+    else
+        result += c;
+}
+
+Console.WriteLine(result);
